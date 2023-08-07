@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 // @ts-expect-error
-import {another1} from './another1?inline';
+import raw from './another1?raw';
 
 type Props = {};
 
@@ -8,9 +8,9 @@ export const Hello: FC<Props> = ({}) => {
     return <div className={'Hello'}>
         <h1>Hello React</h1>
         <button onClick={() => {
-            another1();
-            console.log('### inline code:', another1);
+            console.log('### raw code:', raw);
         }}>Hello from inline
         </button>
+        <div>{raw}</div>
     </div>;
 }

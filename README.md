@@ -1,7 +1,7 @@
-TypeScript Vite Inline Demo
+TypeScript Vite Raw Demo
 ===========================
 
-对于 vite 的 `?inline`，没看出来有什么作用
+对于 vite 的 `?raw`，可以把js代码的内容以string形式原本拿出来
 
 ```
 npm install
